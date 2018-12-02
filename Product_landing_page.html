@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Product Landing page</title>
+
+  <style>
+
+#header{
+  position:fixed;
+  top:0;
+}
+
+.container{
+  display:flex;
+  flex-direction:row;
+}
+
+body{
+  text-align: center;
+  background-color:skyblue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.smaller-image{
+  width:200px;
+}
+.box{
+  border-style: transparent;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+    background-color:white;
+}
+
+@media only screen and (max-width:400px){
+  #header-img{
+    border:50%;
+  }
+}
+
+  </style>
+
+</head>
+
+<header id="header">
+  <nav  id="nav-bar">
+  <a class="nav-link" href="#description">Who are we</a>
+  <a class="nav-link" href="#dropdown">Contact</a>
+  <a class="nav-link" href="#comic">Design</a>
+  <a class="nav-link" href="#comment">Submit</a>
+
+  </nav>
+  <div class="box">
+  <img class="smaller-image" id="header-img" src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/19399994_1959020744123665_665845373423697855_n.jpg?_nc_cat=105&oh=277d1eefc329aaf55abbc068fa8aeb19&oe=5C2A53F2">
+    <video id="video" width="300" height="200" controls>
+  <source src="https://www.youtube.com/watch?v=hHW1oY26kxQ" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+  </div>
+<body>
+  <h1 id="title">Title</h1>
+  <p id="description">UNCHAINED INK is a family company, dedicated to bring you custom art peices for your home, office, school, etc...</p>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <label id="name-label">NAME <input id="name" name="name" placeholder=" John Smith" required>
+    <label id="email-label">Email <input type="email" id="email" type="text" name="email" placeholder=" EMAIL@example.com" required>
+    <label id="number-label">Age <input type="number" id="number" type="number" name="age" placeholder=" 18" min="1" max="100">
+      <h2>Which art style would want</h2>
+      <select id="dropdown">
+        <option value="pop art">Pop</option>
+        <option value="Contemporary">Contemporary</option>
+        <option value="abstract">Abstract</option>
+        <option value="Impressionism">Impressionism</option>
+      </select>
+  <p id="comic">What's your favourite comic company?</p>
+        <label><input type="radio" name="option1" value="option">Marvel
+        <label><input type="radio" name="option1" value="option">DC
+        <label><input type="radio" name="option1" value="option">Dark Horse Comics
+        <label><input type="radio" name="option1" value="option">Image Comics
+
+    <p>What would be your superpower?</p>
+    <label><input type="checkbox" name="flight" value="power">Flight
+    <label><input type="checkbox" name="super-strength" value="power">Super-strength
+    <label><input type="checkbox" name="animal powers" value="power">Animal power
+    <label><input type="checkbox" name="psychic" value="power">Psychic
+
+      <p><textarea id="comment" name="comment" form="userform" placeholder="Enter any design idea's you might have"></textarea></p>
+      <input type="submit" id="submit">
+  </form>
+
+  </html>
